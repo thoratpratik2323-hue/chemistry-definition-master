@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry Definition Master | Ishika's Revision 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <div class="app-wrapper">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">📚</div>
+                <div class="brand-name">ChemDefMaster</div>
+            </div>
+
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="defSearch" placeholder="Search definitions...">
+            </div>
+
+            <div class="nav-label">Physical Chemistry</div>
+            <ul class="nav-links">
+                <li class="nav-item active" data-view="solutions"><span>🧪</span> Solutions</li>
+                <li class="nav-item" data-view="electro"><span>🔋</span> Electrochemistry</li>
+                <li class="nav-item" data-view="kinetics"><span>⏱️</span> Chemical Kinetics</li>
+            </ul>
+
+            <div class="nav-label">Inorganic Chemistry</div>
+            <ul class="nav-links">
+                <li class="nav-item" data-view="inorganic"><span>⚛️</span> d & f Block / Coord.</li>
+            </ul>
+
+            <div class="nav-label">Organic Chemistry</div>
+            <ul class="nav-links">
+                <li class="nav-item" data-view="organic-1"><span>🧬</span> Halo / Alcohols</li>
+                <li class="nav-item" data-view="organic-2"><span>🧪</span> Carbonyls / Amines</li>
+                <li class="nav-item" data-view="biomolecules"><span>🍏</span> Biomolecules</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <h1>Revision <span style="color:var(--primary)">Essentials</span></h1>
+                <p>Curated 1-mark & 2-mark definitions based on 10-year CBSE analysis. 🎯</p>
+            </header>
+
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <span class="stat-value">65+</span>
+                    <span class="stat-label">Core Definitions</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">Top 5</span>
+                    <span class="stat-label">Exam Predictions</span>
+                </div>
+            </div>
+
+            <div class="definition-grid" style="margin-bottom: 3rem;">
+                <div class="definition-card" style="border-left: 5px solid #ef4444; background: #fff1f2;">
+                    <div class="def-term" style="color:#b91c1c">🔥 2026 Exam Predictions</div>
+                    <p class="def-meaning">Focus 200% on these: <strong>Kohlrausch's Law</strong>, <strong>Lanthanoid
+                            Contraction</strong>, <strong>Zwitterion structure</strong>, <strong>Pseudo 1st
+                            Order</strong>, and <strong>Ideal vs Non-Ideal</strong> deviations.</p>
+                </div>
+            </div>
+
+            <div class="exam-tip">
+                <h3><span>💡</span> Exam Hack: The "Exact Word" Policy</h3>
+                <p>CBSE examiners look for specific keywords like <strong>"infinite dilution"</strong>, <strong>"per
+                        unit volume"</strong>, or <strong>"non-volatile"</strong>. Using these ensures a full 1 mark
+                    even if the grammar is slightly off!</p>
+                <div class="exam-tip-icon">📝</div>
+            </div>
+
+            <!-- SOLUTIONS SECTION -->
+            <section id="view-solutions" class="chapter-view active">
+                <h2 style="margin-bottom: 1.5rem;">Solutions Definitions</h2>
+                <div class="definition-grid" id="solutionsGrid">
+                    <!-- Cards will be injected here via script or kept static for performance -->
+                    <div class="definition-card">
+                        <div class="def-term">Molarity (M) <span class="def-imp">V. Imp</span></div>
+                        <p class="def-meaning">Number of moles of solute dissolved in <strong>one litre (1L)</strong> of
+                            solution.</p>
+                        <div class="def-tags"><span class="tag">Temp. Dependent</span> <span class="tag">M = n/V</span>
+                        </div>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Molality (m)</div>
+                        <p class="def-meaning">Number of moles of solute dissolved in <strong>one kilogram
+                                (1kg)</strong> of solvent.</p>
+                        <div class="def-tags"><span class="tag">Temp. Independent</span> <span class="tag">m =
+                                n/W(kg)</span></div>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Raoult's Law <span class="def-imp">Must Know</span></div>
+                        <p class="def-meaning">For a solution of volatile liquids, the partial vapour pressure of each
+                            component is directly proportional to its mole fraction.</p>
+                        <div class="def-tags"><span class="tag">Mathematical</span> <span class="tag">P = P°x</span>
+                        </div>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Ideal Solution</div>
+                        <p class="def-meaning">A solution that obeys Raoult's law over the entire range of
+                            concentrations and shows no change in enthalpy or volume on mixing (\(\Delta H_{\text{mix}}
+                            = 0\)).</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Azeotropes</div>
+                        <p class="def-meaning">Binary mixtures having the same composition in liquid and vapour phase
+                            and boil at a constant temperature.</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Colligative Properties</div>
+                        <p class="def-meaning">Properties that depend only on the <strong>number of solute
+                                particles</strong> and not on their nature.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ELECTROCHEMISTRY SECTION -->
+            <section id="view-electro" class="chapter-view">
+                <h2 style="margin-bottom: 1.5rem;">Electrochemistry Definitions</h2>
+                <div class="definition-grid">
+                    <div class="definition-card">
+                        <div class="def-term">Molar Conductivity (\(\Lambda_m\))</div>
+                        <p class="def-meaning">Conductivity of all the ions produced by dissolving <strong>one
+                                mole</strong> of an electrolyte in a solution.</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Kohlrausch's Law <span class="def-imp">Repeated</span></div>
+                        <p class="def-meaning">At infinite dilution, molar conductivity of an electrolyte can be
+                            represented as the sum of individual contributions of the anion and cation.</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Standard Hydrogen Electrode</div>
+                        <p class="def-meaning">A reference electrode used to measure standard electrode potentials,
+                            assigned a potential of exactly <strong>0.00 V</strong> at all temperatures.</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Fuel Cells</div>
+                        <p class="def-meaning">Galvanic cells that are designed to convert the energy of combustion of
+                            fuels directly into electrical energy.</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Corrosion</div>
+                        <p class="def-meaning">Slow coating of the surfaces of metallic objects with oxides or other
+                            salts of the metal due to interaction with enviornment.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- KINETICS SECTION -->
+            <section id="view-kinetics" class="chapter-view">
+                <h2 style="margin-bottom: 1.5rem;">Chemical Kinetics</h2>
+                <div class="definition-grid">
+                    <div class="definition-card">
+                        <div class="def-term">Order of Reaction</div>
+                        <p class="def-meaning">Sum of powers of the concentration of the reactants in the rate law
+                            expression.</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Molecularity</div>
+                        <p class="def-meaning">Number of reacting species taking part in an elementary reaction, which
+                            must collide simultaneously.</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Rate Constant (k)</div>
+                        <p class="def-meaning">Rate of reaction when the concentration of each reactant is <strong>unity
+                                (1 M)</strong>.</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Activation Energy (\(E_a\))</div>
+                        <p class="def-meaning">Minimum extra energy required by a reactant molecule to form an
+                            intermediate (activated complex).</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Pseudo First Order</div>
+                        <p class="def-meaning">Reactions which are not truly of first order but under certain conditions
+                            behave as first order (e.g., Inversion of cane sugar).</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- INORGANIC -->
+            <section id="view-inorganic" class="chapter-view">
+                <h2 style="margin-bottom: 1.5rem;">d & f Block / Coordination</h2>
+                <div class="definition-grid">
+                    <div class="definition-card">
+                        <div class="def-term">Lanthanoid Contraction <span class="def-imp">Hot Topic</span></div>
+                        <p class="def-meaning">Steady decrease in the atomic and ionic radii of lanthanoid elements with
+                            increasing atomic number.</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Interstitial Compounds</div>
+                        <p class="def-meaning">Those which are formed when small atoms like H, C or N are trapped inside
+                            the crystal lattices of metals.</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Ambidentate Ligand</div>
+                        <p class="def-meaning">A ligand which can ligate through two different atoms (e.g., \(NO_2^-\),
+                            \(SCN^-\)).</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Chelate Effect</div>
+                        <p class="def-meaning">Enhanced stability of a complex containing a multidentate ligand forming
+                            a ring structure.</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Homoleptic Complexes</div>
+                        <p class="def-meaning">Complexes in which a metal is bound to only <strong>one kind</strong> of
+                            donor groups.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ORGANIC 1 -->
+            <section id="view-organic-1" class="chapter-view">
+                <h2 style="margin-bottom: 1.5rem;">Haloalkanes, Alcohols & Phenols</h2>
+                <div class="definition-grid">
+                    <div class="definition-card">
+                        <div class="def-term">Chirality</div>
+                        <p class="def-meaning">The property of non-superimposability of an object on its mirror image.
+                        </p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Enantiomers</div>
+                        <p class="def-meaning">The stereoisomers related to each other as non-superimposable mirror
+                            images.</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Racemic Mixture</div>
+                        <p class="def-meaning">A mixture containing two enantiomers in <strong>equal
+                                proportions</strong>, having zero optical rotation.</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Denaturation of Alcohol</div>
+                        <p class="def-meaning">Making alcohol unfit for drinking by adding poisonous substances like
+                            methanol or copper sulphate.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ORGANIC 2 -->
+            <section id="view-organic-2" class="chapter-view">
+                <h2 style="margin-bottom: 1.5rem;">Carbonyls, Acids & Amines</h2>
+                <div class="definition-grid">
+                    <div class="definition-card">
+                        <div class="def-term">Aldol Condensation</div>
+                        <p class="def-meaning">A reaction of aldehydes or ketones having at least one
+                            <strong>α-hydrogen</strong> in the presence of dilute alkali to form β-hydroxy aldehydes or
+                            ketones.
+                        </p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Cannizzaro Reaction</div>
+                        <p class="def-meaning">Self oxidation and reduction of aldehydes which <strong>do not
+                                have</strong> an α-hydrogen atom, on treatment with concentrated alkali.</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Zwitterion (Amines)</div>
+                        <p class="def-meaning">In aqueous solution, the carboxyl group can lose a proton and amino group
+                            can accept a proton, giving rise to a dipolar ion.</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Gabriel Phthalimide Synthesis</div>
+                        <p class="def-meaning">A method used for the preparation of <strong>primary aliphatic
+                                amines</strong> using phthalimide.</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Hinsberg's Reagent</div>
+                        <p class="def-meaning">Benzenesulphonyl chloride (\(C_6H_5SO_2Cl\)), used to distinguish between
+                            primary, secondary and tertiary amines.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BIOMOLECULES (Hidden Gems) -->
+            <section id="view-biomolecules" class="chapter-view">
+                <h2 style="margin-bottom: 1.5rem;">Biomolecules (Mark Scoring)</h2>
+                <div class="definition-grid">
+                    <div class="definition-card">
+                        <div class="def-term">Zwitterion <span class="def-imp">Repeated</span></div>
+                        <p class="def-meaning">A dipolar ion formed when the carboxylic group loses a proton and amino
+                            group accepts it within the same amino acid molecule.</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Peptide Linkage</div>
+                        <p class="def-meaning">The amide bond formed between the \(—COOH\) group of one amino acid and
+                            \(—NH_2\) group of another.</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Denaturation of Proteins</div>
+                        <p class="def-meaning">A process where a protein loses its biological activity due to physical
+                            or chemical changes (pH, heat), breaking the secondary/tertiary structures.</p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Anomers</div>
+                        <p class="def-meaning">Cyclic monosaccharides that differ in configuration only at the
+                            <strong>C1 carbon</strong> (Anomeric carbon).
+                        </p>
+                    </div>
+
+                    <div class="definition-card">
+                        <div class="def-term">Glycosidic Linkage</div>
+                        <p class="def-meaning">The oxide linkage formed between two monosaccharide units through loss of
+                            a water molecule.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
